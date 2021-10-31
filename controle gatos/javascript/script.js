@@ -1,4 +1,3 @@
-//const { Chart } = require("chart.js");
 
 let buttons = document.querySelectorAll("button.button");//variavel recebe todas tags com a classa button
 let intro = document.querySelector("div#bemvindo")//texto com instruções
@@ -49,15 +48,8 @@ options: {
 }
 });
 
-
-
-
-
 for (let cont = 0; cont < buttons.length; cont++) {//laço que sabe qual button foi clicado
     buttons[cont].addEventListener('click', updatechart)//ao click no butão vai chamar a função updatechart
-
-   
-   
 
     function updatechart() {
         switch (cont) {//estrutura de escollha switch case
@@ -73,12 +65,8 @@ for (let cont = 0; cont < buttons.length; cont++) {//laço que sabe qual button 
                     
                    graficododia();//chama a função grafico dia
                    aparecercampos()//chama a função que ira aparecer os inputs
-                   
-                 
-                                     
 
                 }
-
                 break;
             case 1:
 
@@ -92,46 +80,26 @@ for (let cont = 0; cont < buttons.length; cont++) {//laço que sabe qual button 
                     
                    graficosemana()//chama a função grafico semana
 
-                 
-                                     
-
                 }
-            
-                
-                
-               
                 break;
             case 2:
 
                 if ((valors[0].value == "") || (valors[1].value == "") || (valors[2].value == "") ||//a condição do if é saber se os inputs estão nulos
                 (valors[3].value == "") || (valors[4].value == "") || (valors[5].value == "") || (valors[6].value=="")) {
-                window.alert("Insira valores no campos valor")
-
+                 window.alert("Insira valores no campos valor")
             } else {
                 intro.style.display = "none"//manipulação css faz que oculta a introdução
                 grafico.style.display="block"//chama a função que ira aparecer os inputs
                 
                 graficomes();//chama a função grafico semana
-               
-             
-                                 
 
+    
             }
-            
-            
-            
-                break;
+            break;
             default:
-                break;
-
-
+            break;
         }
-
-
     }
-
-   
-
 
 function graficododia(){
 
@@ -160,13 +128,7 @@ function graficosemana(){
     }
     for(let cont=0;cont<arraylist.length;cont++){//nesse array ira ocultar os inputs que foram criados pelo java scripty 
         arraylist[cont].style.display="none"//manipulação css para o array que recebe os inputs criados pelo java scripty
-    }
-  
-   
-    
-    
-    
-    
+    }    
 }
 function graficomes(){
 
@@ -175,13 +137,10 @@ function graficomes(){
         arraylist[cont].style.display="inline-block"//manipulação javascrypt
     }
 
-    
     if(arraylist.length<5){//condição que aassegura que o array ira ser criados um unica vez.
-
 
         for(let contnum=0;contnum<=5;contnum++){//laço de uma a 5
 
-            
             let inputcamp=document.createElement("input");//criando um elemeto HTMl pela função createElement (elemento input)
             inputcamp.type="number";//passando o tipo de input
             inputcamp.className="inputvalor";//atribuido classe
@@ -191,35 +150,22 @@ function graficomes(){
             arraylist.push(inputcamp)//passando o elemento criado peara a função
             
             divvalores.appendChild(inputcamp);//crindo o input
-            
-        
-            
+
         }
-
-        
-
-
     }
-  
+
     graficodia.data.datasets[0].label="Grafico do Ano"
     graficodia.data.labels=['Jan','Fev', 'Mar', 'Abr', 'Maio', 'Jun','Jul','Ago','Set','Out','Nov','Dez'],
     graficodia.data.datasets[0].data=[valors[0].value, valors[1].value, valors[2].value, 
     valors[3].value, valors[4].value, valors[5].value,valors[6].value, arraylist[0].value, arraylist[1].value, arraylist[3].value, arraylist[4].value,arraylist[5].value];
     graficodia.update()
 
-    
-  
-    
-
 }
 
 function aparecercampos(){//essa função ira fazer aparecer os inputs da variavel valors que sumiram.
     for(numconta=0;numconta<=valors.length;numconta++){
         valors[numconta].style.display = "inline-block";
-
     }
    
 }  
-
-
 }
