@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    background-color: rgb(84, 128, 221);
+    color:white;
+    
+}
+
+#cabeçalho #titulo{
+    
+    margin-left: 50px;
+    font-size: 50px;
+
+} 
+
+#listabuttons{
+    list-style: none;
+}
+#bemvindo{
+    font-family: 'Lato', sans-serif;
+    width: 500px;
+    font-size: 30px;
+
+
+
+}
+nav{
+    float: left;
+    margin-top:250px;
+}
+
+.button{
+    
+    width: 250px;
+    height: 100px;
+    color:white;
+    font-size: 30px;
+    text-align: left;
+    border:none;
+    margin-bottom: 5px;
+    background-color: rgb(18, 82, 221) ;
+    
+}
+
+.button:hover{
+
+    background-color: rgb(46, 97, 207);
+    cursor: pointer;
+    margin: 2px;
+    width: 255px;
+    height: 110px;
+
+}
+
+#corpo{
+
+    margin-left: 25%;
+    margin-top: -250px;
+    width: 70%;
+    height: 700px;
+    border-radius:40px ;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+   
+  
+
+    
+}
+
+#bemvindo{
+    color:black;
+}
+.container{
+
+   display: none;
+    position:relative;
+    height: 500px;
+    width: 1000px;
+    
+ 
+
+}
+#chart{
+  
+    border: 1px solid black;
+    background-color: rgba(206, 201, 201, 0.39);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    
+    
+}
+.valores{
+    padding-top: 20px;
+    margin-left:400px;
+}
+.inputvalor{
+    width: 100px;
+    height: 40px;
+   
+    font-size: 15pt;
+}
+
+
+footer{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+#contato{
+    float: left;
+    
+
+}
+.logo{
+
+    display: block;
+    margin: 10px;
+
+}
+#creditos{
+    margin-left: 80%;
+    font-size: 20px;
+}
+
