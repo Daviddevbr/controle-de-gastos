@@ -5,6 +5,7 @@ body{
     
 }
 
+
 #cabeçalho #titulo{
     
     margin-left: 50px;
@@ -64,9 +65,6 @@ nav{
     justify-content:center;
     align-items: center;
    
-  
-
-    
 }
 
 #bemvindo{
@@ -78,8 +76,6 @@ nav{
     position:relative;
     height: 500px;
     width: 1000px;
-    
- 
 
 }
 #chart{
@@ -90,25 +86,41 @@ nav{
     
     
 }
+#zeravalor{
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    color: white;
+    cursor: pointer;
+    background-color: #1B75BB;
+    border: none;
+    margin-top: 10px;
+    margin-left: 80%;
+    
+
+}
 .valores{
     padding-top: 20px;
-    margin-left:400px;
+    margin-left:30%;
+    
 }
 .inputvalor{
     width: 100px;
     height: 40px;
-   
+  
     font-size: 15pt;
 }
 
 
 footer{
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 5%;
 }
 
 #contato{
     float: left;
+   
     
 
 }
@@ -119,7 +131,143 @@ footer{
 
 }
 #creditos{
+    width: 250px;
     margin-left: 80%;
-    font-size: 20px;
+    font-size: 25px;
+    
+}
+.logo{
+    cursor: pointer;
+    width: 50px;
+    margin-bottom: 20px;
+    
+}
+.logo:hover{
+    width: 55px;
+
+}
+#links{
+    float: left;
+    position: relative;
+    top: 20px;
+    font-family: 'Lato', sans-serif;
+    
+}
+.rede{
+  
+   
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 20pt;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    
+}
+.rede:hover{
+    font-size:22pt ;
+}
+
+@media (max-width: 1190px) {
+
+    #corpo{
+        margin-left: 30%;
+       
+        height: 600px;
+    }
+
+    .container{
+        width: 70%;
+        top:100px;
+    }
+
+    .valores{
+        width: 60%;
+        margin-left: 35%;
+        
+    }
+   #creditos{
+       margin-left: 70%;
+   }
+   .button:hover{
+
+    background-color: rgb(46, 97, 207);
+    cursor: pointer;
+    margin: 5px;
+   
+   } 
+    
+    
+
+
+
+}
+
+@media (max-width: 1000px) {
+
+ 
+    nav{
+       
+        margin-top: -20px;
+    }
+    #listabuttons{
+        top: 200px;
+        display: inline-flex;
+        width: 100%;
+        
+    }
+    .button{
+  
+        margin-right: 10px;
+        width: 100px;
+        height: 60px;
+        font-size: 15pt;
+    }
+    #corpo{
+        margin-left: 5%;
+        width: 90%;
+
+    }
+ 
+    .valores{
+        margin-left: 20%;
+        width: 70%;
+    }
+    #creditos{
+        margin-left: 60%;
+    }
+    .button:hover{
+
+        background-color: rgb(46, 97, 207);
+        cursor: pointer;
+        width: 170px;
+        height: 80px;
+
+       
+    } 
+
+    .logo{
+       width: 40px;
+        
+    }
+    .rede{
+      
+       
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 15pt;
+        margin-bottom: 40px;
+        font-family: 'Lato', sans-serif;
+        
+    }
+    #creditos{
+        width: 40%;
+        margin-left: 50%;
+        font-size: 15pt;
+        
+    }
+        
+
 }
 

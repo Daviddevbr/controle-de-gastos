@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
     <title>Controle Gastos</title>
 </head>
 <body>
@@ -40,6 +40,17 @@
 
             <div class="container">
                 <canvas id="chart"></canvas>
+                <button id="zeravalor">
+                    <p>Zera Valor
+                    </p>
+                    <span class="iconify" data-icon="emojione-v1:counterclockwise-arrows-button" data-width="25" ></span>
+                   
+                </button>
+
+               
+                    
+                    
+                    
             </div>
 
         </div>
@@ -60,10 +71,15 @@
 
     <footer>
         <aside id="contato">
-            <img class="logo" src="" alt="Facebook">
-            <img class="logo" src="" alt="Whatsapp">
-            <img class="logo" src="" alt="Instagran">
+            <a  href="https://www.facebook.com/DavidQueirozO/" target="_blank"><img class="logo" src="fontoslogo/facebook100.png" alt="Facebook"></a>
+            <a  href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img class="logo" src="fontoslogo/whatsapp100.png" alt="Whatsapp"></a>
+            <a  href="https://www.instagram.com/david.qoliveira/" target="_blank"><img class="logo" src="fontoslogo/instagram100.png" alt="Instagram"></a>
         </aside>
+        <div id="links">
+                <a class="rede" href="https://www.facebook.com/DavidQueirozO/" target="_blank">Facebook</a>
+                <a class="rede" href="https://www.whatsapp.com/?lang=pt_br" target="_blank"> Whatsapp</a>
+                <a class="rede" href="https://www.instagram.com/david.qoliveira/" target="_blank"> Instagram</a>
+        </div>
         <div id="creditos">
             <p id="descrição">Pagina criada com o objetivo de agrega em no meu <br> portifolio particulas</p>
             <p id="autor"> &copy; David </p>
@@ -73,7 +89,7 @@
     
     <script  src='./node_modules/chart.js/dist/chart.js'></script>  
     <script src="javascript/script.js"></script>
-    
+    <script src = "https://code.iconify.design/2/2.0.3/iconify.min.js"> </script>
 
 </body>
 </html>

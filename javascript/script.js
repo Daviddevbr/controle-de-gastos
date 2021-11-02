@@ -5,7 +5,8 @@ let intro = document.querySelector("div#bemvindo")//texto com instruções
 let grafico = document.querySelector("div.container")//é a div que guarda o grafico
 let divvalores=document.querySelector("div.valores")//div que quarda os inputs
 let valors = document.querySelectorAll("input.inputvalor")//todos os inputs atravez de querySelectorAll
-
+let graficozera=document.querySelector("button#zeravalor")
+graficozera.addEventListener('click' , zeravalor)
 let arraylist=[];//array que vai receber os inputs criados pelo java scrypt
 
 const ctx = document.getElementById('chart').getContext('2d');//esse é grafico biblioteca chart.js
@@ -84,8 +85,8 @@ for (let cont = 0; cont < buttons.length; cont++) {//laço que sabe qual button 
                 break;
             case 2:
 
-                if ((valors[0].value == "") || (valors[1].value == "") || (valors[2].value == "") ||//a condição do if é saber se os inputs estão nulos
-                (valors[3].value == "") || (valors[4].value == "") || (valors[5].value == "") || (valors[6].value=="")) {
+                if (/*(valors[0].value == "") || (valors[1].value == "") || (valors[2].value == "") ||//a condição do if é saber se os inputs estão nulos
+                (valors[3].value == "") || (valors[4].value == "") || (valors[5].value == "") || (valors[6].value=="")*/ false) {
                  window.alert("Insira valores no campos valor")
             } else {
                 intro.style.display = "none"//manipulação css faz que oculta a introdução
@@ -100,6 +101,7 @@ for (let cont = 0; cont < buttons.length; cont++) {//laço que sabe qual button 
             break;
         }
     }
+}
 
 function graficododia(){
 
@@ -146,6 +148,7 @@ function graficomes(){
             inputcamp.className="inputvalor";//atribuido classe
             inputcamp.style.marginRight="4px"//atribuido css
             inputcamp.style.marginTop="4px"//atribuido css
+            inputcamp.placeholder="$:"
 
             arraylist.push(inputcamp)//passando o elemento criado peara a função
             
@@ -168,4 +171,20 @@ function aparecercampos(){//essa função ira fazer aparecer os inputs da variav
     }
    
 }  
+function zeravalor(){
+   
+    graficodia.data.datasets[0].data=[valors[0].value, valors[1].value, valors[2].value, 
+    valors[3].value, valors[4].value, valors[5].value,valors[6].value, arraylist[0].value, arraylist[1].value, arraylist[3].value, arraylist[4].value,arraylist[5].value];
+    
+    for(let cont=0;cont<=7;cont++){
+        valors[cont].value=0
+        arraylist[cont].value=0
+    }
+    
+    
+  
+    
+    graficodia.update()
+   
+
 }
