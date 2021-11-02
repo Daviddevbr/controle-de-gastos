@@ -85,8 +85,8 @@ for (let cont = 0; cont < buttons.length; cont++) {//laço que sabe qual button 
                 break;
             case 2:
 
-                if (/*(valors[0].value == "") || (valors[1].value == "") || (valors[2].value == "") ||//a condição do if é saber se os inputs estão nulos
-                (valors[3].value == "") || (valors[4].value == "") || (valors[5].value == "") || (valors[6].value=="")*/ false) {
+                if ((valors[0].value == "") || (valors[1].value == "") || (valors[2].value == "") ||//a condição do if é saber se os inputs estão nulos
+                (valors[3].value == "") || (valors[4].value == "") || (valors[5].value == "") || (valors[6].value=="")) {
                  window.alert("Insira valores no campos valor")
             } else {
                 intro.style.display = "none"//manipulação css faz que oculta a introdução
