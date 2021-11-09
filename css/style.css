@@ -124,10 +124,9 @@ nav{
 }
 
 .container{
-
-  
     position:relative;
-    height: 500px;
+     top:-90px;
+    height: 300px;
     width: 1000px;
 
 }
