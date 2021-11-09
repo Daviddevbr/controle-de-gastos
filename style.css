@@ -128,7 +128,7 @@ nav{
   
     position:relative;
     height: 500px;
-    width: 1000px;
+    width: 900px;
 
 }
 #chart{
@@ -167,7 +167,7 @@ nav{
     height: 40px;
     outline: none;
     font-size: 15pt;
-    z-index: 100;
+    z-index: 1000;
 }
 
 
