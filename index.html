@@ -28,16 +28,6 @@
         </nav>
 
         <div id="corpo">
-
-            <div id="bemvindo">
-                <p>Ola saudação
-                    esse site ira ser um gui simples de controle de gastos
-                    selecione entre Dia,Semana,Mês e Ano e insira os valores gastos de acordo
-                    com a opição selecionada
-                    a baixo esta o capo para inserir os valores gastos.
-                </p>
-            </div>
-
             <div class="container">
                 <canvas id="chart"></canvas>
                 <button id="zeravalor">
@@ -46,11 +36,6 @@
                     <span class="iconify" data-icon="emojione-v1:counterclockwise-arrows-button" data-width="25" ></span>
                    
                 </button>
-
-               
-                    
-                    
-                    
             </div>
 
         </div>
@@ -86,10 +71,31 @@
         </div>
     </footer>
 
+    <div id="modal" class="modal-conteiner">
+
+        <div class="corpo-modal">
+            <button class="fecharX">X</button>
+            
+                <p>
+                    O objetivo desse site é ser um gesto de gasto simples. Assim que o usuario escolher a opição do grafico Dia,Semana,Mês
+                    O usuario deverar inserir os valores no campo de valor abaixo e depois aperta em gerar grafico.
+                </p>
+                <p>
+                    O campos tem que esta preenchidos com algum valor númerico para se escolher uma opição do grafico.
+                </p>
+            
+
+
+        </div>
+
+    </div>
+
     
     <script  src='./node_modules/chart.js/dist/chart.js'></script>  
     <script src="javascript/script.js"></script>
     <script src = "https://code.iconify.design/2/2.0.3/iconify.min.js"> </script>
+
+
 
 </body>
 </html>
